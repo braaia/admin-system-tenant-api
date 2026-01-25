@@ -27,10 +27,6 @@ api_router = APIRouter()
 api_router.include_router(users.router)
 api_router.include_router(materials.router)
 
-tenant_router = APIRouter(prefix="/t/{tenant}")
-tenant_router.include_router(users.router)
-tenant_router.include_router(materials.router)
-
 admin_router = APIRouter()
 
 
@@ -50,9 +46,7 @@ def testing():
 
 
 api_router.include_router(admin_router)
-tenant_router.include_router(admin_router)
 app.include_router(api_router)
-app.include_router(tenant_router)
 
 
 
