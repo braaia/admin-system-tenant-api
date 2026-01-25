@@ -6,6 +6,7 @@ from sqlalchemy.orm import Session
 from backend.dependencies import get_db
 from backend.models.models import Material, EntradaMaterial, SaidaMaterial
 from backend.schemas import MateriaisIn, MateriaisOut, MateriaisInUpdate, EntradaOut, SaidaOut
+from backend.security.util.protectedRoute import require_roles
 from backend.services.materialService import MaterialService
 
 router = APIRouter(prefix="/estoque-materiais")
@@ -19,7 +20,8 @@ def cadastrar_material(material: MateriaisIn, db: Session = Depends(get_db)):
 
 
 @router.get("/listar-materiais", response_model=List[MateriaisOut],
-            name="Listar Materiais", tags=["Materiais"])
+            name="Listar Materiais", tags=["Materiais"],
+            dependencies=[Depends(require_roles(*roles))])
 def listar_materiais(db: Session = Depends(get_db)) -> list[type[Material]]:
     return db.query(Material).order_by(Material.id).all()
 
