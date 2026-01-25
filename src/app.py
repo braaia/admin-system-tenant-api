@@ -1,4 +1,9 @@
-from fastapi import FastAPI, Depends, Request
+import threading
+import uvicorn
+from decouple import config
+from fastapi import FastAPI, Depends, Request, APIRouter
+
+from backend.db_init import init_database
 from backend.routers import materials, users
 from backend.schemas import UsuariosOut
 from backend.security.util.protectedRoute import require_roles, get_current_user
@@ -17,8 +22,15 @@ app = FastAPI(
 )
 # endregion
 
-app.include_router(users.router)
-app.include_router(materials.router)
+api_router = APIRouter()
+api_router.include_router(users.router)
+api_router.include_router(materials.router)
+
+tenant_router = APIRouter(prefix="/t/{tenant}")
+tenant_router.include_router(users.router)
+tenant_router.include_router(materials.router)
+
+admin_router = APIRouter()
 
 
 @app.get("/")
@@ -26,14 +38,21 @@ def root(request: Request):
     return {"Host": request.headers["host"]}
 
 
-@app.get("/admin/me", response_model=UsuariosOut, tags=["Admin"])
+@admin_router.get("/admin/me", response_model=UsuariosOut, tags=["Admin"])
 def get_me(user: UsuariosOut = Depends(get_current_user)):
     return user
 
 
-@app.get("/admin/tests/role-test", tags=["Testes"], dependencies=[Depends(require_roles("admin"))])
+@admin_router.get("/admin/tests/role-test", tags=["Testes"], dependencies=[Depends(require_roles("admin"))])
 def testing():
     return "Funcionando"
+
+
+api_router.include_router(admin_router)
+tenant_router.include_router(admin_router)
+app.include_router(api_router)
+app.include_router(tenant_router)
+
 
 
 if __name__ == "__main__":
