@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aed17371-2719-4d26-acbe-09b056a41bda" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="384YsesoxfWxLmjFrbKomUIcTxo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "FastAPI.Unnamed.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.backend/main.executor": "Run",
+    "Python.frontend/main.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.tests.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindow.Debug.ShowToolbar": "false",
+    "ToolWindow.Run.ShowToolbar": "false",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "<unknown>",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Braia/Documents/VS Code/My Projects/08-pyside6/0-admin-system-tenant-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.splitter.proportion": "0.16838996",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Braia\Documents\VS Code\My Projects\06-flet\05-admin-system\src\frontend\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Braia\Documents\VS Code\My Projects\06-flet\05-admin-system\src\backend\models" />
+      <recent name="C:\Users\Braia\Documents\VS Code\My Projects\06-flet\05-admin-system\src\frontend\images\icons" />
+      <recent name="C:\Users\Braia\Documents\VS Code\My Projects\06-flet\05-admin-system\src\backend" />
+      <recent name="C:\Users\Braia\Documents\VS Code\My Projects\06-flet\05-admin-system\src\frontend\pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.frontend/main">
+    <configuration name="backend/main" type="PythonConfigurationType" factoryName="Python">
+      <module name="1-admin-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (1-admin-system)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="frontend/main" type="PythonConfigurationType" factoryName="Python">
+      <module name="1-admin-system" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (1-admin-system)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/frontend/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.frontend/main" />
+      <item itemvalue="Python.backend/main" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.142" />
+        <option value="bundled-python-sdk-f2b7a9f6281b-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aed17371-2719-4d26-acbe-09b056a41bda" name="Changes" comment="" />
+      <created>1768060518238</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768060518238</updated>
+      <workItem from="1768060519488" duration="1581000" />
+      <workItem from="1768062191121" duration="470000" />
+      <workItem from="1768062687677" duration="590000" />
+      <workItem from="1768068736976" duration="265000" />
+      <workItem from="1768069013096" duration="44000" />
+      <workItem from="1768069071804" duration="1204000" />
+      <workItem from="1768070310252" duration="11938000" />
+      <workItem from="1768083665677" duration="126000" />
+      <workItem from="1768084303565" duration="109000" />
+      <workItem from="1768085012126" duration="184000" />
+      <workItem from="1768085216241" duration="461000" />
+      <workItem from="1768085717924" duration="61000" />
+      <workItem from="1768095739628" duration="1502000" />
+      <workItem from="1768097909705" duration="2451000" />
+      <workItem from="1768155978277" duration="9499000" />
+      <workItem from="1768183886221" duration="179000" />
+      <workItem from="1768184357551" duration="457000" />
+      <workItem from="1768233458301" duration="1717000" />
+      <workItem from="1768239506813" duration="1239000" />
+      <workItem from="1768247804130" duration="13641000" />
+      <workItem from="1768330216262" duration="14188000" />
+      <workItem from="1768411601564" duration="19755000" />
+      <workItem from="1768441827145" duration="743000" />
+      <workItem from="1768611207287" duration="2291000" />
+      <workItem from="1768649280406" duration="19255000" />
+      <workItem from="1768683138383" duration="458000" />
+      <workItem from="1768739650009" duration="7370000" />
+      <workItem from="1768749071113" duration="9342000" />
+      <workItem from="1768782947366" duration="2821000" />
+      <workItem from="1768856408551" duration="3859000" />
+      <workItem from="1768862529177" duration="5035000" />
+      <workItem from="1769032201388" duration="6221000" />
+      <workItem from="1769040183415" duration="133000" />
+      <workItem from="1769121180059" duration="2455000" />
+      <workItem from="1769264515366" duration="3660000" />
+      <workItem from="1769277131449" duration="1404000" />
+      <workItem from="1769278563937" duration="1209000" />
+      <workItem from="1769279845021" duration="9539000" />
+      <workItem from="1769301567628" duration="356000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/backend/routers/materials.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/05_admin_system$frontend_main.coverage" NAME="frontend/main Coverage Results" MODIFIED="1769276148719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/1_admin_system$main.coverage" NAME="frontend/main Coverage Results" MODIFIED="1769279279074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/05_admin_system$backend_main.coverage" NAME="backend/main Coverage Results" MODIFIED="1769265361723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/05_admin_system$main.coverage" NAME="main Coverage Results" MODIFIED="1768098738699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/frontend" />
+    <SUITE FILE_PATH="coverage/05_admin_system$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1768061063990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/05_admin_system$tests.coverage" NAME="tests Coverage Results" MODIFIED="1769264648372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/1_admin_system$backend_main.coverage" NAME="backend/main Coverage Results" MODIFIED="1769286182005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/1_admin_system$frontend_main.coverage" NAME="frontend/main Coverage Results" MODIFIED="1769289378133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

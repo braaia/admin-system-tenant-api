@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="images">
+    <file>login_background.jpg</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>icons/icon_admin.svg</file>
+    <file>icons/icon_arrow.png</file>
+    <file>icons/icon_const_materials.png</file>
+    <file>icons/icon_days.svg</file>
+    <file>icons/icon_down.png</file>
+    <file>icons/icon_in_stock.png</file>
+    <file>icons/icon_materials.svg</file>
+    <file>icons/icon_menu.svg</file>
+    <file>icons/icon_orange_warning.png</file>
+    <file>icons/icon_red_warning.png</file>
+    <file>icons/icon_search.png</file>
+    <file>icons/icon_search_white.png</file>
+    <file>icons/icon_settings.svg</file>
+    <file>icons/icon_stock.png</file>
+    <file>icons/icon_stock.svg</file>
+  </qresource>
+</RCC>

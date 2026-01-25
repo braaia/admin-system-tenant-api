@@ -1,0 +1,22 @@
+# BACKEND
+fastapi
+uvicorn
+SQLAlchemy
+psycopg2-binary
+pydantic
+pydantic[email]
+httpx
+
+# FRONTEND
+pyside6
+
+# TOOLS
+alembic
+
+# SECURITY
+bcrypt
+PyJWT
+python-decouple
+
+# TESTS
+pytest
