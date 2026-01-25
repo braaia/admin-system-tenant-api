@@ -416,7 +416,6 @@ class MainWindow(QMainWindow):
     # region REGISTER POST REQUEST
     async def register_account(self):
         data = {
-            "tenant_schema": "user",
             "nome": self.ui.ui_pages.txt_reg_username.text(),
             "sobrenome": self.ui.ui_pages.txt_reg_lastname.text(),
             "email": self.ui.ui_pages.txt_reg_email.text(),
