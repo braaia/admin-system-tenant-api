@@ -43,7 +43,7 @@ def get_current_user(
     raise auth_exception
 
 
-def require_roles(*allowed_roles: str):
+def require_roles(*allowed_roles: list):
     allowed = [r.lower() for r in allowed_roles]
 
     def dependency(current_user: UsuariosOut = Depends(get_current_user)) -> UsuariosOut:

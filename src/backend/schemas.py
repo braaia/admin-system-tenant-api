@@ -64,9 +64,9 @@ class ColaboradoresOut(ColaboradoresIn):
 
 # endregion
 
-# region Materiais Almoxarifado
+# region Materiais
 
-class MateriaisAlmoxarifadoIn(BaseModel):
+class MateriaisIn(BaseModel):
     codigo: str
     fornecedor: str
     nome: str
@@ -77,21 +77,21 @@ class MateriaisAlmoxarifadoIn(BaseModel):
     estoque: str
 
 
-class MateriaisAlmoxarifadoInUpdate(BaseModel):
+class MateriaisInUpdate(BaseModel):
     codigo: Union[str, None] = None
     fornecedor: Union[str, None] = None
     nome: Union[str, None] = None
     tipo: Union[str, None] = None
 
 
-class MateriaisAlmoxarifadoOutUpdate(MateriaisAlmoxarifadoInUpdate):
+class MateriaisOutUpdate(MateriaisInUpdate):
     id: int
 
     class Config:
         from_attributes = True
 
 
-class MateriaisAlmoxarifadoOut(MateriaisAlmoxarifadoIn):
+class MateriaisOut(MateriaisIn):
     id: int
 
     class Config:
@@ -100,9 +100,9 @@ class MateriaisAlmoxarifadoOut(MateriaisAlmoxarifadoIn):
 
 # endregion
 
-# region Historico de Entrada e Saida Almoxarifado
+# region Historico de Entrada e Saida
 
-class EntradaAlmoxarifadoIn(BaseModel):
+class EntradaIn(BaseModel):
     data_entrada: Union[date, None] = None
     nome: str
     fornecedor: str
@@ -111,14 +111,14 @@ class EntradaAlmoxarifadoIn(BaseModel):
     preco_total: int
 
 
-class EntradaAlmoxarifadoOut(EntradaAlmoxarifadoIn):
+class EntradaOut(EntradaIn):
     id: int
 
     class Config:
         from_attributes = True
 
 
-class SaidaAlmoxarifadoIn(BaseModel):
+class SaidaIn(BaseModel):
     data_saida: Union[date, None] = None
     nome: str
     bloco: Union[str, None] = None
@@ -126,7 +126,7 @@ class SaidaAlmoxarifadoIn(BaseModel):
     preco_total: int
 
 
-class SaidaAlmoxarifadoOut(SaidaAlmoxarifadoIn):
+class SaidaOut(SaidaIn):
     id: int
 
     class Config:

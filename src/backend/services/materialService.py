@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
 from backend.models.models import Material, EntradaMaterial, SaidaMaterial
-from backend.schemas import MateriaisAlmoxarifadoIn, MateriaisAlmoxarifadoInUpdate, MateriaisAlmoxarifadoOut
+from backend.schemas import MateriaisIn, MateriaisInUpdate, MateriaisOut
 
 
 class MaterialService:
@@ -25,7 +25,7 @@ class MaterialService:
         entrada_material.preco_total = entrada_material.valor_unitario * entrada_material.quantidade
 
     @staticmethod
-    def cadastrar_material(material_dados: MateriaisAlmoxarifadoIn, db: Session) -> Material:
+    def cadastrar_material(material_dados: MateriaisIn, db: Session) -> Material:
         """Cria um novo material e atualiza o estoque automaticamente"""
         novo_material = Material(
             **material_dados.model_dump(exclude_none=True)
@@ -52,7 +52,7 @@ class MaterialService:
         return novo_material
 
     @staticmethod
-    def atualizar_material(id_material: int, material_dados: MateriaisAlmoxarifadoInUpdate,
+    def atualizar_material(id_material: int, material_dados: MateriaisInUpdate,
                            db: Session) -> Material | None:
         """Atualiza um material e recalcula o estoque automaticamente"""
         material_alterado: Material = db.get(Material, id_material)
@@ -102,7 +102,7 @@ class MaterialService:
 
     @staticmethod
     def atualizar_quantidade(id_material: int, sub_or_sum: int, bloco: str, nova_quantidade: int,
-                             db: Session) -> MateriaisAlmoxarifadoOut | None:
+                             db: Session) -> MateriaisOut | None:
         """
         Atualiza apenas a quantidade de um material e recalcula o estoque.
         Útil para saídas/entradas rápidas de estoque.
@@ -148,7 +148,7 @@ class MaterialService:
         return material
 
     @staticmethod
-    def atualizar_valor(id_material: int, novo_valor: int, db: Session) -> MateriaisAlmoxarifadoOut | None:
+    def atualizar_valor(id_material: int, novo_valor: int, db: Session) -> MateriaisOut | None:
         """
         Atualiza apenas valor de um material e recalcula o preço total.
         Útil para saídas/entradas rápidas de estoque.

@@ -16,7 +16,8 @@ app = FastAPI(
     openapi_tags=[
         {"name": "Admin", "description": "Administrador de API"},
         {"name": "Usuarios", "description": "Gerenciamento de Usuarios"},
-        {"name": "MateriaisAlmoxarifado", "description": "Gerenciamento de Materiais"},
+        {"name": "Materiais", "description": "Gerenciamento de Materiais"},
+        {"name": "Cícero Gomes", "description": "Cliente 0 - Almoxarifado"},
         {"name": "Testes", "description": "Testando Rotas"},
     ]
 )
