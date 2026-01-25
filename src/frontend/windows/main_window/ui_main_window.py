@@ -114,7 +114,7 @@ class Ui_MainWindow(object):
         self.top_bar.setMinimumHeight(40)
         self.top_bar.setStyleSheet("background-color: #21232d; color: #6272a4")
         #//////////////////////////////////////////////////////////////////////////
-        self.top_bar.setVisible(True)
+        self.top_bar.setVisible(False)
         # TOP BAR LAYOUT
         self.top_bar_layout = QHBoxLayout(self.top_bar)
         self.top_bar_layout.setContentsMargins(10, 0, 10, 0)
