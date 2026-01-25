@@ -28,7 +28,7 @@ class Ui_MainWindow(object):
         self.left_menu.setMaximumWidth(50)
         self.left_menu.setMinimumWidth(50)
         #///////////////////////////////////////////////////////
-        self.left_menu.setVisible(True)
+        self.left_menu.setVisible(False)
         # LEFT MANU LAYOUT
         self.left_menu_layout = QVBoxLayout(self.left_menu)
         self.left_menu_layout.setContentsMargins(0, 0, 0, 0)

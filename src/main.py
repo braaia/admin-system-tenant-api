@@ -1,10 +1,10 @@
 import sys
 
-from services.api_client import ApiClient
-from services.async_methods import AsyncMethods
-from services.stock_service import EstoqueService
-from qt_core import *
-from windows.main_window.ui_main_window import Ui_MainWindow
+from frontend.services.api_client import ApiClient
+from frontend.services.async_methods import AsyncMethods
+from frontend.services.stock_service import EstoqueService
+from frontend.qt_core import *
+from frontend.windows.main_window.ui_main_window import Ui_MainWindow
 
 
 class MainWindow(QMainWindow):
@@ -659,4 +659,5 @@ class MainWindow(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = MainWindow()
+    window.show()
     sys.exit(app.exec())
