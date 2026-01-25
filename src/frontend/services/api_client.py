@@ -22,9 +22,11 @@ class ApiClient:
     @classmethod
     def set_token(cls, token: dict) -> None:
         """Define o token JWT para autenticacao"""
-        cls._token = token["token"]
-        cls._role = token["cargo"]
-        cls._tenant = token["tenant_schema"]
+        cls._token = token.get("token")
+        cls._role = token.get("cargo")
+        tenant_schema = token.get("tenant_schema")
+        if tenant_schema:
+            cls._tenant = tenant_schema
 
     @classmethod
     def get_token(cls) -> Optional[str]:

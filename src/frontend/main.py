@@ -393,8 +393,10 @@ class MainWindow(QMainWindow):
         try:
             token = await EstoqueService.login_account(data)
             ApiClient.set_token(token)
-            self.current_tenant = token["tenant_schema"]
-            print(token["tenant_schema"])
+            tenant_schema = token.get("tenant_schema")
+            self.current_tenant = tenant_schema
+            ApiClient.set_tenant(tenant_schema)
+            print(tenant_schema)
 
             role = ApiClient.get_role()
 
@@ -414,6 +416,7 @@ class MainWindow(QMainWindow):
     # region REGISTER POST REQUEST
     async def register_account(self):
         data = {
+            "tenant_schema": "user",
             "nome": self.ui.ui_pages.txt_reg_username.text(),
             "sobrenome": self.ui.ui_pages.txt_reg_lastname.text(),
             "email": self.ui.ui_pages.txt_reg_email.text(),
