@@ -44,7 +44,7 @@ def get_me(user: UsuariosOut = Depends(get_current_user)):
     return user
 
 
-@admin_router.get("/admin/tests/role-test", tags=["Testes"], dependencies=[Depends(require_roles(["admin"]))])
+@admin_router.get("/admin/tests/role-test", tags=["Testes"], dependencies=[Depends(require_roles("admin"))])
 def testing():
     return "Funcionando"
 

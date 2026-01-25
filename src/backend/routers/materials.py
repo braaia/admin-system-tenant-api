@@ -84,14 +84,14 @@ def atualizar_valor_unitario(id_material: int, valor: int, db: Session = Depends
 # region Cícero Gomes - Cliente 0
 @router.get("/listar-entrada-almoxarifado", response_model=List[EntradaOut],
             name="Listar Entrada de Materiais do Almoxarifado", tags=["Cícero Gomes"],
-            dependencies=[Depends(require_roles(roles))])
+            dependencies=[Depends(require_roles(cliente0))])
 def listar_entrada_almoxarifado(db: Session = Depends(get_db)) -> list[type[EntradaMaterial]]:
     return db.query(EntradaMaterial).order_by(EntradaMaterial.id).all()
 
 
 @router.get("/listar-saida-almoxarifado", response_model=List[SaidaOut],
             name="Listar Saida de Materiais do Almoxarifado", tags=["Cícero Gomes"],
-            dependencies=[Depends(require_roles(roles))])
+            dependencies=[Depends(require_roles(cliente0))])
 def listar_entrada_almoxarifado(db: Session = Depends(get_db)) -> list[type[SaidaMaterial]]:
     return db.query(SaidaMaterial).order_by(SaidaMaterial.id).all()
 # endregion

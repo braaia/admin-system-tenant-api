@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aed17371-2719-4d26-acbe-09b056a41bda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/routers/materials.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/routers/materials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/schemas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/security/util/protectedRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/security/util/protectedRoute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/services/materialService.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/services/materialService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/services/api_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/services/api_client.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +206,7 @@
       <workItem from="1769279845021" duration="9539000" />
       <workItem from="1769301567628" duration="356000" />
       <workItem from="1769303724861" duration="1474000" />
-      <workItem from="1769342706816" duration="3632000" />
+      <workItem from="1769342706816" duration="4027000" />
     </task>
     <servers />
   </component>
