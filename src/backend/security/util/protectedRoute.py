@@ -1,4 +1,4 @@
-from typing import Annotated, Iterable, Sequence, Union, overload
+from typing import Annotated, Union
 
 from fastapi import Depends, Header, HTTPException, status
 from sqlalchemy.orm import Session
@@ -43,14 +43,8 @@ def get_current_user(
     raise auth_exception
 
 
-@overload
-def require_roles(*allowed_roles: str | Sequence[str]):
-    if len(allowed_roles) == 1 and isinstance(allowed_roles[0], (list, tuple, set)):
-        roles_iter: Iterable[str] = allowed_roles[0]
-    else:
-        roles_iter = allowed_roles
-
-    allowed = [r.lower() for r in roles_iter]
+def require_roles(*allowed_roles: str):
+    allowed = [r.lower() for r in allowed_roles]
 
     def dependency(current_user: UsuariosOut = Depends(get_current_user)) -> UsuariosOut:
         if not current_user or not getattr(current_user, "cargo", None):
