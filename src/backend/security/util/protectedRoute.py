@@ -44,13 +44,11 @@ def get_current_user(
 
 
 def require_roles(*allowed_roles: str):
-    allowed = [r.lower() for r in allowed_roles]
-
     def dependency(current_user: UsuariosOut = Depends(get_current_user)) -> UsuariosOut:
         if not current_user or not getattr(current_user, "cargo", None):
             raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Permissão negada")
 
-        if current_user.cargo.lower() not in allowed:
+        if current_user.cargo.lower() not in allowed_roles:
             raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Permissão negada")
 
         return current_user
