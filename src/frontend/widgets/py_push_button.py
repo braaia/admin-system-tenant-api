@@ -1,4 +1,5 @@
 import os
+import sys
 
 from frontend.qt_core import *
 
@@ -108,14 +109,22 @@ class PyPushButton(QPushButton):
         qp.end()
 
     def draw_icon(self, qp, image, rect, color):
-        # FORMAT PATH
-        app_path = os.path.abspath(os.getcwd())
-        folder = "src/frontend/images/icons"
-        path = os.path.join(app_path, folder)
-        icon_path = os.path.normpath(os.path.join(path, image))
+        if not image:
+            return
 
-        # DRAW ICON
-        icon = QPixmap(icon_path)
+        # Prefer Qt resources; fallback to filesystem for dev builds.
+        resource_path = f":/icons/icons/{image}"
+        icon = QPixmap(resource_path)
+        if icon.isNull():
+            if hasattr(sys, "_MEIPASS"):
+                base_dir = os.path.join(sys._MEIPASS, "frontend")
+            else:
+                base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+            icon_path = os.path.normpath(os.path.join(base_dir, "images", "icons", image))
+            icon = QPixmap(icon_path)
+        if icon.isNull():
+            return
+
         painter = QPainter(icon)
         painter.setCompositionMode(QPainter.CompositionMode_SourceIn)
         painter.fillRect(icon.rect(), color)

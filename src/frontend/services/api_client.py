@@ -5,10 +5,9 @@ from decouple import config
 
 
 class ApiClient:
-    HTTP_SCHEME = config("API_SCHEME", default="https")
-    BASE_DOMAIN = config("API_BASE_DOMAIN", default="admin-system-tenant-2vscxmjdf-wesleys-projects-abf53e5c.vercel.app")
-    BASE_PORT = config("API_PORT", default="5001")
-    TENANT_MODE = config("API_TENANT_MODE", default="header")
+    HTTP_SCHEME = config("API_SCHEME")
+    BASE_DOMAIN = config("API_BASE_DOMAIN")
+    TENANT_MODE = config("API_TENANT_MODE")
     _token: Optional[str] = None
     _role: Optional[str] = None
     _tenant: Optional[str] = None

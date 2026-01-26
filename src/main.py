@@ -409,6 +409,7 @@ class MainWindow(QMainWindow):
             else:
                 self.ui.pages.setCurrentWidget(self.ui.ui_pages.sobre_page)
         except Exception as e:
+            self.requisition_error()
             print(e)
 
     # endregion
@@ -426,6 +427,7 @@ class MainWindow(QMainWindow):
 
             self.ui.pages.setCurrentWidget(self.ui.ui_pages.login_page)
         except Exception as e:
+            self.requisition_error()
             print(e)
 
     # endregion
@@ -546,7 +548,7 @@ class MainWindow(QMainWindow):
         )
         dlg.setContentsMargins(0, 0, 30, 0)
         dlg.setIcon(QMessageBox.Information)
-        dlg.setWindowIcon(QIcon("src/frontend/images/icons/icon_orange_warning.png"))
+        dlg.setWindowIcon(QIcon(":/icons/icons/icon_orange_warning.png"))
         dlg.exec()
 
     def material_created_error(self):
@@ -561,7 +563,7 @@ class MainWindow(QMainWindow):
         )
         dlg.setContentsMargins(0, 0, 30, 0)
         dlg.setIcon(QMessageBox.Warning)
-        dlg.setWindowIcon(QIcon("src/frontend/images/icons/icon_orange_warning.png"))
+        dlg.setWindowIcon(QIcon(":/icons/icons/icon_orange_warning.png"))
         dlg.exec()
 
     # endregion
@@ -579,7 +581,7 @@ class MainWindow(QMainWindow):
         )
         dlg.setContentsMargins(0, 0, 30, 0)
         dlg.setIcon(QMessageBox.Information)
-        dlg.setWindowIcon(QIcon("src/frontend/images/icons/icon_orange_warning.png"))
+        dlg.setWindowIcon(QIcon(":/icons/icons/icon_orange_warning.png"))
         dlg.exec()
 
     def requisition_error(self):
@@ -594,7 +596,7 @@ class MainWindow(QMainWindow):
         )
         dlg.setContentsMargins(0, 0, 30, 0)
         dlg.setIcon(QMessageBox.Critical)
-        dlg.setWindowIcon(QIcon("src/frontend/images/icons/icon_red_warning.png"))
+        dlg.setWindowIcon(QIcon(":/icons/icons/icon_red_warning.png"))
         dlg.exec()
 
     # endregion
