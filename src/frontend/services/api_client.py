@@ -1,13 +1,12 @@
 from typing import Optional
-
 import httpx
 from decouple import config
 
 
 class ApiClient:
-    HTTP_SCHEME = config("API_SCHEME")
-    BASE_DOMAIN = config("API_BASE_DOMAIN")
-    TENANT_MODE = config("API_TENANT_MODE")
+    HTTP_SCHEME = config("API_SCHEME", default="https")
+    BASE_DOMAIN = config("API_BASE_DOMAIN", default="admin-system-tenant-api.vercel.app")
+    TENANT_MODE = config("API_TENANT_MODE", default="header")
     _token: Optional[str] = None
     _role: Optional[str] = None
     _tenant: Optional[str] = None

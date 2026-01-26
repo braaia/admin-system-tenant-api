@@ -1,0 +1,6 @@
+{
+    "API_SCHEME": "https",
+    "API_BASE_DOMAIN": "admin-system-tenant-api.vercel.app",
+    "API_TIMEOUT": 10.0,
+    "API_TENANT_MODE": "header"
+}
