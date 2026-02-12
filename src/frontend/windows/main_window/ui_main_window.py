@@ -84,7 +84,7 @@ class Ui_MainWindow(object):
 
 
         #region LABEL VERSION
-        self.left_menu_label_version = QLabel("v1.0.0.0")
+        self.left_menu_label_version = QLabel("v0.9.0.4")
         self.left_menu_label_version.setAlignment(Qt.AlignCenter)
         self.left_menu_label_version.setMaximumHeight(30)
         self.left_menu_label_version.setMinimumHeight(30)
