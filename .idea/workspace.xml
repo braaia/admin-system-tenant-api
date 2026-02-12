@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="aed17371-2719-4d26-acbe-09b056a41bda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/pages/ui_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/pages/ui_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +139,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/frontend/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,14 +149,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.frontend/main" />
       <item itemvalue="Python.backend/main" />
+      <item itemvalue="Python.frontend/main" />
     </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.142" />
         <option value="bundled-python-sdk-f2b7a9f6281b-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.142" />
       </set>
     </attachedChunks>
@@ -206,6 +208,7 @@
       <workItem from="1769301567628" duration="356000" />
       <workItem from="1769303724861" duration="1474000" />
       <workItem from="1769342706816" duration="9850000" />
+      <workItem from="1770921721757" duration="15000" />
     </task>
     <servers />
   </component>

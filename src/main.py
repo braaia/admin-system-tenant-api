@@ -1,5 +1,6 @@
 import sys
 
+from backend.db_init import create_tenant
 from frontend.services.api_client import ApiClient
 from frontend.services.async_methods import AsyncMethods
 from frontend.services.stock_service import EstoqueService
@@ -118,6 +119,9 @@ class MainWindow(QMainWindow):
 
         # POST MATERIAL
         self.ui.ui_pages.btn_cadastrar_mat.clicked.connect(lambda: AsyncMethods.async_post_materials(self))
+
+        # CREATE TENANT
+        self.ui.ui_pages.btn_create_tenant.clicked.connect(self.func_create_tenant)
         # endregion
 
         # DISPLAY THE APP
@@ -433,6 +437,13 @@ class MainWindow(QMainWindow):
     # endregion
 
     # region FUNCTIONS
+    def func_create_tenant(self):
+        name = self.ui.ui_pages.txt_tnt_name.text()
+        schema = self.ui.ui_pages.txt_schema_name.text()
+        host = self.ui.ui_pages.txt_host_name.text()
+
+        create_tenant(name, schema, host)
+
     def reset_selection(self):
         for btn in self.ui.left_menu.findChildren(QPushButton):
             try:

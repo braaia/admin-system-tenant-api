@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'pagewlWWkk.ui'
+## Form generated from reading UI file 'pagerARqES.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -1609,14 +1609,23 @@ class Ui_ApplicationPages(object):
         ApplicationPages.addWidget(self.change_materials_page)
         self.admin_page = QWidget()
         self.admin_page.setObjectName(u"admin_page")
-        self.label_3 = QLabel(self.admin_page)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(430, 260, 181, 101))
+        self.txt_tnt_name = QLineEdit(self.admin_page)
+        self.txt_tnt_name.setObjectName(u"txt_tnt_name")
+        self.txt_tnt_name.setGeometry(QRect(80, 90, 171, 22))
+        self.txt_schema_name = QLineEdit(self.admin_page)
+        self.txt_schema_name.setObjectName(u"txt_schema_name")
+        self.txt_schema_name.setGeometry(QRect(280, 90, 171, 22))
+        self.txt_host_name = QLineEdit(self.admin_page)
+        self.txt_host_name.setObjectName(u"txt_host_name")
+        self.txt_host_name.setGeometry(QRect(470, 90, 181, 22))
+        self.btn_create_tenant = QPushButton(self.admin_page)
+        self.btn_create_tenant.setObjectName(u"btn_create_tenant")
+        self.btn_create_tenant.setGeometry(QRect(710, 90, 101, 26))
         ApplicationPages.addWidget(self.admin_page)
 
         self.retranslateUi(ApplicationPages)
 
-        ApplicationPages.setCurrentIndex(0)
+        ApplicationPages.setCurrentIndex(7)
         self.tabWidgetStock.setCurrentIndex(1)
 
 
@@ -1760,6 +1769,6 @@ class Ui_ApplicationPages(object):
         self.btn_modificar_mat.setText(QCoreApplication.translate("ApplicationPages", u"Modificar Material", None))
         self.btn_atualizar_lista_estoque.setText(QCoreApplication.translate("ApplicationPages", u"Atualizar Lista", None))
         self.tabWidgetStock.setTabText(self.tabWidgetStock.indexOf(self.tab_verificar_materiais), QCoreApplication.translate("ApplicationPages", u"Materiais", None))
-        self.label_3.setText(QCoreApplication.translate("ApplicationPages", u"admin page", None))
+        self.btn_create_tenant.setText(QCoreApplication.translate("ApplicationPages", u"Criar", None))
     # retranslateUi
 
