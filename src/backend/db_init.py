@@ -1,6 +1,7 @@
 from sqlalchemy import MetaData
 from sqlalchemy.schema import CreateSchema
 
+from backend.models import models as tenant_models
 from backend.database import engine, Base, with_db
 from backend.models.tenant import Tenant
 
