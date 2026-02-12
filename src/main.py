@@ -223,7 +223,7 @@ class MainWindow(QMainWindow):
     # endregion
 
     # region GET REQUEST FUNCTIONS
-    def _populate_get_materials(self, materials):
+    def populate_get_materials(self, materials):
         page = self.ui.ui_pages.stock_table_widget
         page.clearContents()
         page.setRowCount(len(materials))
@@ -237,7 +237,7 @@ class MainWindow(QMainWindow):
                     value = material.get(field, "")
                     page.setItem(row, column, QTableWidgetItem(str(value)))
 
-    def _populate_get_ent_sai(self, entradas, saidas):
+    def populate_get_ent_sai(self, entradas, saidas):
         page_ent = self.ui.ui_pages.ent_table_widget
         page_ent.clearContents()
         page_ent.setRowCount(len(entradas))
@@ -354,11 +354,11 @@ class MainWindow(QMainWindow):
     async def get_materials(self):
         try:
             estoque = await EstoqueService.listar_materiais(self.current_tenant)
-            self._populate_get_materials(estoque)
+            self.populate_get_materials(estoque)
             self.get_materials_count(estoque)
             entrada = await EstoqueService.listar_entradas(self.current_tenant)
             saida = await EstoqueService.listar_saidas(self.current_tenant)
-            self._populate_get_ent_sai(entrada, saida)
+            self.populate_get_ent_sai(entrada, saida)
             self.get_ent_sai_count(estoque, entrada, saida)
         except Exception as e:
             self.requisition_error()
@@ -451,6 +451,7 @@ class MainWindow(QMainWindow):
     def show_new_window(self, window):
         if self.w is None:
             self.w = window
+            self.w.destroyed.connect(lambda: setattr(self, "w", None))
             self.w.show()
 
     def reset_selection(self):
@@ -571,7 +572,37 @@ class MainWindow(QMainWindow):
         dlg.setWindowIcon(QIcon(":/icons/icons/icon_orange_warning.png"))
         dlg.exec()
 
+    def material_refreshed(self):
+        dlg = QMessageBox(self)
+        dlg.setWindowTitle("Alerta!")
+        dlg.setText("✅ Material atualizado com sucesso!")
+        dlg.setStyleSheet(
+            "QMessageBox { background-color: #f0f0f0; border: 1px solid black; }"
+            "QLabel { color: black; font-size: 16px; }"
+            "QPushButton { background-color: #4CAF50; font: 700 12px; color: black; padding: 5px 25px; border: 1px solid black; border-radius: 6px; }"
+            "QPushButton:hover { background-color: #45a049; }"
+        )
+        dlg.setContentsMargins(0, 0, 30, 0)
+        dlg.setIcon(QMessageBox.Information)
+        dlg.setWindowIcon(QIcon(":/icons/icons/icon_orange_warning.png"))
+        dlg.exec()
+
     def material_created_error(self):
+        dlg = QMessageBox(self)
+        dlg.setWindowTitle("Alerta!")
+        dlg.setText("❌ Erro - Por favor complete os campos de texto!")
+        dlg.setStyleSheet(
+            "QMessageBox { background-color: #f0f0f0; border: 1px solid black; }"
+            "QLabel { color: black; font-size: 16px; }"
+            "QPushButton { background-color: #DC3545; font: 700 12px; color: black; padding: 5px 25px; border: 1px solid black; border-radius: 6px; }"
+            "QPushButton:hover { background-color: #9A2530; }"
+        )
+        dlg.setContentsMargins(0, 0, 30, 0)
+        dlg.setIcon(QMessageBox.Warning)
+        dlg.setWindowIcon(QIcon(":/icons/icons/icon_orange_warning.png"))
+        dlg.exec()
+
+    def material_refresh_error(self):
         dlg = QMessageBox(self)
         dlg.setWindowTitle("Alerta!")
         dlg.setText("❌ Erro - Por favor complete os campos de texto!")

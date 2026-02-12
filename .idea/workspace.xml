@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aed17371-2719-4d26-acbe-09b056a41bda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/frontend/windows/modificar_material_window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/services/async_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/services/async_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/services/stock_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/services/stock_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/pages/ui_modmatwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/pages/ui_modmatwindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/windows/modificar_material_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/windows/modificar_material_window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

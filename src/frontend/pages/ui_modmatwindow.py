@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'modmatwindowoBtzRm.ui'
+## Form generated from reading UI file 'modmatwindowvWOsmq.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -216,7 +216,7 @@ class Ui_ModMatWindow(object):
         self.txt_material_id.setPlaceholderText(QCoreApplication.translate("ModMatWindow", u"ID do material", None))
         self.txt_nova_quantidade.setPlaceholderText(QCoreApplication.translate("ModMatWindow", u"Quantidade", None))
         self.txt_bloco.setPlaceholderText(QCoreApplication.translate("ModMatWindow", u"Bloco", None))
-        self.btn_modificar.setText(QCoreApplication.translate("ModMatWindow", u"Modificar", None))
+        self.btn_modificar.setText(QCoreApplication.translate("ModMatWindow", u"Atualizar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_qnt), QCoreApplication.translate("ModMatWindow", u"Quantidade", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_valor_uni), QCoreApplication.translate("ModMatWindow", u"Valor Unit\u00e1rio", None))
     # retranslateUi
