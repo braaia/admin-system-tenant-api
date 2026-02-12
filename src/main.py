@@ -6,6 +6,7 @@ from frontend.services.async_methods import AsyncMethods
 from frontend.services.stock_service import EstoqueService
 from frontend.qt_core import *
 from frontend.windows.main_window.ui_main_window import Ui_MainWindow
+from frontend.windows.modificar_material_window import ModificarMatWindow
 
 
 class MainWindow(QMainWindow):
@@ -122,9 +123,13 @@ class MainWindow(QMainWindow):
 
         # CREATE TENANT
         self.ui.ui_pages.btn_create_tenant.clicked.connect(self.func_create_tenant)
+
+        # MODIFY MATERIAL
+        self.ui.ui_pages.btn_modificar_mat.clicked.connect(lambda: self.show_new_window(ModificarMatWindow(self)))
         # endregion
 
         # DISPLAY THE APP
+        self.w = None
         self.show()
 
     # region GET ME
@@ -358,7 +363,6 @@ class MainWindow(QMainWindow):
         except Exception as e:
             self.requisition_error()
             print(f"Erro na requisição: {e}")
-
     # endregion
 
     # region POST REQUEST FUNCTION
@@ -443,6 +447,11 @@ class MainWindow(QMainWindow):
         host = self.ui.ui_pages.txt_host_name.text()
 
         create_tenant(name, schema, host)
+
+    def show_new_window(self, window):
+        if self.w is None:
+            self.w = window
+            self.w.show()
 
     def reset_selection(self):
         for btn in self.ui.left_menu.findChildren(QPushButton):

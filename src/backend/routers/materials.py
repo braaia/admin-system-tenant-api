@@ -45,7 +45,7 @@ def deletar_material(id_material: int, db: Session = Depends(get_db)) -> None:
         raise HTTPException(status_code=404, detail="Material não encontrado")
 
 
-@router.patch("/atualizar-{sub_or_sum}-quant-{quant}-material-id-{id_material}",
+@router.patch("/atualizar-{sub_or_sum}-quant-{quant}-material-id-{id_material}-para-{bloco}",
               response_model=MateriaisOut, tags=["Materiais"],
               name="Atualizar apenas a quantidade (estoque atualizado automaticamente)", status_code=200)
 def atualizar_quantidade_material(id_material: int, sub_or_sum: int, quant: int, bloco: str = None,

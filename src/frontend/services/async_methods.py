@@ -31,3 +31,10 @@ class AsyncMethods:
             AsyncMethods.async_get_materials(window)
         except Exception as e:
             print(f"Erro ao cadastrar material: {e}")
+
+    @staticmethod
+    def async_refresh_quant(window):
+        try:
+            asyncio.run(window.refresh_quant())
+        except Exception as e:
+            print(e)

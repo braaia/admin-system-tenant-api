@@ -22,13 +22,15 @@ class EstoqueService:
     @staticmethod
     async def cadastrar_material(tenant, data):
         return await ApiClient.post(tenant, f"{EstoqueService.material_prefix}/cadastrar-material", data)
-    # endregion
 
+    @staticmethod
+    async def atualizar_quantidade(tenant, id_material, sub_or_sum, qnt, bloco):
+        return await ApiClient.patch(tenant, f"{EstoqueService.material_prefix}/atualizar-{sub_or_sum}-quant-{qnt}-material-id-{id_material}-para-{bloco}")
 
-    # region Cícero Gomes - Cliente 0
     @staticmethod
     async def listar_entradas(tenant):
         return await ApiClient.get(tenant, f"{EstoqueService.material_prefix}/listar-entrada")
+
     @staticmethod
     async def listar_saidas(tenant):
         return await ApiClient.get(tenant, f"{EstoqueService.material_prefix}/listar-saida")
